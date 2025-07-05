@@ -3,10 +3,8 @@
 require_once 'query.php';
 require_once 'filter.php';
 
-function readUsers($conn, $id = null, $username = null, $age = null) {
-    $filter = createFilter($id, $username, $age);
-
-    $res = query("SELECT * FROM users" . $filter, $conn);
+function readUsers($conn) {
+    $res = query("SELECT * FROM users WHERE");
     if ($res) {
         echo "Users read successfully<br>";
         if ($res->num_rows === 0)
