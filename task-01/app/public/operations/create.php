@@ -1,7 +1,5 @@
 <?php
 
-require_once 'query.php';
-
 function createUser($conn, $username, $age) {
 
     $res = query("INSERT INTO users (username, age) VALUES ('{$username}', {$age})", $conn);

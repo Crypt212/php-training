@@ -1,10 +1,9 @@
 <?php
 
 require_once 'query.php';
-require_once 'filter.php';
 
 function readUsers($conn) {
-    $res = query("SELECT * FROM users WHERE");
+    $res = query("SELECT * FROM users", $conn);
     if ($res) {
         echo "Users read successfully<br>";
         if ($res->num_rows === 0)

@@ -12,13 +12,13 @@ createUser($conn, "waleed", 29);
 createUser($conn, "hazem", 3);
 createUser($conn, "ahmed", 2);
 
-readUsers($conn); // all
+readUsers($conn);
 
-deleteUsers($conn, 1);
+deleteUser($conn, 1);
 
-readUsers($conn); // all
+readUsers($conn);
 
-updateUsers($conn, 1, "rafat", 55);
+updateUser($conn, 1, "rafat", 55);
 
 readUsers($conn);
 
