@@ -11,7 +11,7 @@ function readUsers($conn) {
 
         echo '<br><br>-------------------------------------------------------------';
         while ($row = $res->fetch_assoc()) {
-            echo "<br>username: " . $row["username"] . ",       age: " . $row["age"];
+            echo "<br>id: " . $row["id"], ", username: " . $row["username"] . ", age: " . $row["age"];
         }
         echo '<br>---------------------------------------------------------<br><br>';
     }
