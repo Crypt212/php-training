@@ -134,8 +134,7 @@
                 <img src="./assets/img/user2-160x160.jpg" class="rounded-circle shadow"
                     alt="User Image" />
                 <p>
-                    <?= $_SESSION['user']['username'] ?> - Web Developer
-                    <small>Member since Nov. 2023</small>
+                    <?= $_SESSION['user']['username'] ?> - <?= $_SESSION['user']['role'] ?>
                 </p>
             </li>
             <!--end::User Image-->
